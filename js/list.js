@@ -8,7 +8,7 @@ $('document').ready(function() {
 
   $('#logout').on('click', function() {
     localStorage.removeItem('user')
-    location.href = '/'
+    location.href = '/foodpal'
   })
 })
 
@@ -67,7 +67,7 @@ function addMatchListener() {
     })
 
     alert('congrat!')
-    location.href = '/me.html'
+    location.href = '/foodpal/me.html'
   })
 }
 

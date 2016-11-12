@@ -65,6 +65,6 @@ $('document').ready(function() {
 
   $('#logout').on('click', function() {
     localStorage.removeItem('user')
-    location.href = '/'
+    location.href = '/foodpal'
   })
 })

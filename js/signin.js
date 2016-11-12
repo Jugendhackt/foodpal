@@ -13,14 +13,14 @@ $('document').ready(function() {
         if (user.password === $('#password').val()) {
           localStorage.setItem('user', JSON.stringify(user))
 
-          if (user.matched) location.href = '/me.html'
-          else location.href = '/list.html'
+          if (user.matched) location.href = '/foodpal/me.html'
+          else location.href = '/foodpal/list.html'
         } else {
           alert('Wrong Password!')
         }
       } else {
         alert('Sign Up First!')
-        location.href = '/signup.html'
+        location.href = '/foodpal/signup.html'
       }
     })
   })
