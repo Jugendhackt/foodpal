@@ -2,6 +2,11 @@ const db = firebase.database()
 
 $('document').ready(function() {
   const user = JSON.parse(localStorage.getItem('user'))
+
+  if (user.matched) {
+    location.href = '/foodpal/me.js'
+  }
+
   getUsersNotMatched(user.country)
 
   setHeader(user.country)
@@ -65,6 +70,9 @@ function addMatchListener() {
       koreaReceived: false,
       germanyReceived: false
     })
+
+    currentUser.matched = true
+    localStorage.setItem('user', JSON.stringify(currentUser))
 
     alert('congrat!')
     location.href = '/foodpal/me.html'
