@@ -9,6 +9,7 @@ $('document').ready(function() {
     const db = firebase.database()
     db.ref('users/' + $('#country').val() + '/' + $('#username').val()).once('value', function(data) {
       const user = data.val()
+      console.log(user)
       if (user) {
         if (user.password === $('#password').val()) {
           localStorage.setItem('user', JSON.stringify(user))
