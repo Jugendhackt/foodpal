@@ -4,7 +4,7 @@ $('document').ready(function() {
   const user = JSON.parse(localStorage.getItem('user'))
 
   if (user.matched) {
-    location.href = '/foodpal/me.js'
+    location.href = '/foodpal/me.html'
   }
 
   getUsersNotMatched(user.country)
