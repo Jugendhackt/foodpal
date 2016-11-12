@@ -20,7 +20,7 @@ $('document').ready(function() {
         }
       } else {
         alert('Sign Up First!')
-        location.href = '/foodpal/signup.html'
+        location.href = '/foodpal/index.html'
       }
     })
   })
