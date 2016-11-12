@@ -1,0 +1,52 @@
+/*
+* index.html
+*/
+
+.main {
+    height: 100vh;
+}
+
+.main > .row > div {
+    text-align: center;
+    padding: 150px 0px;
+}
+
+.main > .row > .country {
+    padding: 0px 0px;
+}
+
+/*
+*  signin.html
+*/
+.signin {
+    padding: 50px 150px;
+}
+
+/*
+* signup.html
+*/
+
+.signup {
+    padding: 50px 150px;
+}
+
+.signup > header.country {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+/*
+* list.html
+*/
+
+.list {
+    padding: 100px 100px;
+}
+
+.list .country > header {
+    text-align: center;
+}
+
+.list .foods .card img.card-img-top, .match .card img.card-img-top {
+    width: 100%;
+}

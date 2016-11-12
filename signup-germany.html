@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FoodPal - Jugend Hackt</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+        <script src="./lib/cryptojs/core-min.js"></script>
+        <script src="./lib/sha256.js"></script>
+        <script src="./js/signup.js"></script>
+    </head>
+    <body>
+        <section class="signup container">
+            <header class="country">
+                <h1>Germany</h1>
+            </header>
+            <form id="form">
+                <input id="country" type="hidden" name="country" value="germany">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact</label>
+                    <textarea class="form-control" id="contact" rows="3" placeholder="facebook, twitter, cellphone, etc"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="food">Food</label>
+                    <input type="text" class="form-control" id="food" aria-describedby="foodHelp" placeholder="(Required) Food Name" required>
+                    <small id="foodHelp" class="form-text text-muted">Food that you want to share</small>
+                </div>
+                <div class="form-group">
+                    <label for="food">Food Image Url</label>
+                    <input type="text" class="form-control" id="food-image" placeholder="(Optional)">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+        </section>
+    </body>
+</html>

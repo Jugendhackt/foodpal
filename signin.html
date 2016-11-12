@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FoodPal - Jugend Hackt</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/signin.js"></script>
+    </head>
+    <body>
+        <section class="signin container">
+            <form id="form-signin">
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select class="form-control" id="country">
+                        <option value="germany">Germany</option>
+                        <option value="Korea">Korea</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Signin</button>
+            </form>
+        </section>
+    </body>
+</html>
