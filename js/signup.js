@@ -24,8 +24,8 @@ $('document').ready(function() {
   const existingUser = JSON.parse(checkUserLocalStorage())
 
   if (existingUser) {
-    if (existingUser.matched) location.href = '/me.html'
-    else location.href = '/list.html'
+    if (existingUser.matched) location.href = '/foodpal/me.html'
+    else location.href = '/foodpal/list.html'
   }
 
   $('#form').submit(function(e) {
@@ -58,7 +58,7 @@ $('document').ready(function() {
               setUserLocalStorage(user)
 
               alert('Congrat!')
-              location.href = '/list.html'
+              location.href = '/foodpal/list.html'
             })
         }
       })
